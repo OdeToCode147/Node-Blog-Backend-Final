@@ -89,5 +89,41 @@ const LatestArticleData = (req, res) => {
   ]);
 };
 
+const MorefromSirenData = (req, res) => {
+  res.send([
+   {
+    id: 4,
+    img: "https://c.ndtvimg.com/2022-01/6c8hvi_almonds_625x300_12_January_22.jpg",
+    title: "The health benefits of almonds",
+    details:
+      "Research by the British Journal of Nutrition found that consuming nuts as part of a healthy diet, around 55g a day, is not only beneficial for reducing the risk of heart disease but also has limited risk of weight gain.",
+    date: "Nov 12, 2022",
+    type: "Food",
+    num: 1,
+  },
+    {
+    id: 4,
+    img: "https://i.ytimg.com/vi/ws_CvOjJ7kY/maxresdefault.jpg",
+    title:
+      "SS Rajamouli in talks with Disney for his ‘Globe Trotting’ jungle adventure with Mahesh Babu",
+    details:
+      "It’s a genre that has global appeal, and that’s what Disney wishes to capitalize on.  The talks are going on at a brisk pace and if all goes well, this would be a part of Disney’s global calendar in the coming year, alongside the big Marvel Films as also other mega projects that Disney is bankrolling",
+    date: "Dec 24 2022",
+    type: "Bollywood",
+    num: 1,
+  },
+    {
+    id: 4,
+    img: "https://nypost.com/wp-content/uploads/sites/2/2022/09/steven-spielberg-comp.jpg?quality=75&strip=all",
+    title: "With “The Fabelmans,” Steven Spielberg Finally Phones Home",
+    details:
+      "The director’s new film is his most personal film as it's his POV of retelling of his parents’ troubled marriage and leads the pack in the Oscar race.",
+    date: "Dec 24, 2022",
+    type: "Hollywood",
+  },
+  ]);
+};
+
 module.exports.getLatestData = LatestData;
 module.exports.getLatestArticleData = LatestArticleData;
+module.exports.getMorefromSirenData = MorefromSirenData;
